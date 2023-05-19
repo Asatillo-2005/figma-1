@@ -1,0 +1,426 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    .navbar{
+            width: 100%;
+            height: 79px;
+            background-color:transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10%;
+                li{
+                    margin-top: 10px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    list-style: none;
+                    a{
+                        color: black;
+                        text-decoration: none;
+                        font-family: 'Inter';
+                    }
+   
+                }
+             }
+
+            }
+    .brend{
+           width: 45px;
+           height: 45px;
+           background-image: url('../css/image\ 1.png'); 
+           p{
+            padding-top: 10px;
+            padding-left: 50px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            font-family: sans-serif;
+           }
+
+    }
+
+    button{
+        width: 148px;
+        height: 51px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        background-color: #1C78FF;
+        text-decoration: none;
+        list-style: none;
+        line-height: 19px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .home{
+        position: relative;
+        width: 100%;
+        height:calc(100vh - 100px);
+        background-color: #E7F0FE;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding-left: 15%;
+        
+        h1{
+            font-size: 80px;
+            font-family:sans-serif;
+            font-weight: 600;
+            line-height: 90px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+        .fom{
+            position: absolute;
+            left: 50%;
+            bottom:10%;
+            width: 611px;
+            height: 489px;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-size: 500px;
+            background-image:url('../css/Rectangle\ 49.png');
+        }
+    }
+    .nav{
+        width: 211px;
+        height: 58px;
+        background-color: #1C78FF;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        color: white;
+        line-height: 26px;
+    }
+    .pag{
+        position: relative;
+        width: 100%;
+        height: 519px;
+        background-color: transparent;
+        display: flex;
+        padding-top: 5%;    
+        justify-content: center;
+        h1{
+            font-weight: 600;
+            font-size: 56px;
+            line-height: 66px;
+            color: black;
+            text-align: center;
+            span{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 28px;
+
+            }
+        }
+    }
+    .brand{
+        position: absolute;
+        top: 70%;
+        width: 1539px;
+        height: 101px;
+        background-color:transparent;
+        display: flex;
+        align-items: center;
+        .fon{
+            width: 1539px;
+            height: 101px;
+            border: 4px solid black;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url('../css/Frame\ 1444.png');
+
+        }
+    }
+    @mixin bgpp{
+        background-color:black;
+        padding-top: 10%;
+        p{ 
+            color: white;
+            font-size: 20px ;
+            font-weight: 400;
+            line-height: 28px;
+            font-style: normal;
+            padding-left:10%;
+            span{
+                color: white;
+                font-size: 72px;
+                line-height: 75px;
+                font-weight:600;
+                font-family: sans-serif;
+                font-style: normal;
+                
+            }
+            a{
+                color: white;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 38px;
+                font-family: sans-serif;
+            }
+        }
+    }
+    @mixin fotimegs{
+        background-position:center;
+       background-repeat: no-repeat;
+    }
+    @mixin pp{
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 38px;
+        font-family: sans-serif;
+    }
+    .pag2{
+        width: 100%;
+        min-height: calc(100vh - 519px);
+        background-color:transparent;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-auto-rows:275vh;
+
+    }
+    .item1{
+       @include bgpp();
+       padding-left: 15%;
+       
+
+       .fot{
+           width: 560px;
+           height: 720px;
+           border-radius: 5px;
+           background-image: url('../css/Rectangle\ 58.png');
+           @include fotimegs();
+        }
+       .name{
+          @include pp();
+          }
+
+    }
+    .item2{
+        @include bgpp();
+         
+        .fot2{
+            width: 560px;
+            height: 550px;
+            border-radius: 5px;
+            background-image: url('../css/Rectangle\ 62.png');
+            @include fotimegs();
+        }
+        .name{
+            @include pp();
+        }
+    }
+    .foh{
+        width: 560px;
+        height: 550px;
+        border-radius: 5px;
+        @include fotimegs();
+        background-image: url('../css/Rectangle\ 62\ \(1\).png');
+    }
+    .foh2{
+        width: 560px;
+        height: 550px;
+        border-radius: 5px;
+        @include fotimegs();
+        background-image: url('../css/Rectangle\ 62\ \(2\).png');
+    }
+    .pag3{
+        width: 100%;
+        min-height: 842px;
+        background-color: #E7F0FE;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        h1{
+            position: absolute;
+            top: 7%;
+            left: 27%;
+            text-align: center;
+            color: black;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 48px;
+            font-family: sans-serif;
+            .p3{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 18px
+            }
+        }
+        
+    }
+    .fgf{
+        margin: 20px;
+        width: 461px;
+        height: 341px;
+        border-radius: 10px;
+        background-color: white;
+        padding-left: 20px;
+        padding-top: 45px;
+        .gh{ 
+                color: black;
+                font-weight: 400;
+                font-family: sans-serif;
+                font-size: 16px;
+                line-height: 24px;
+        }
+        .hj{
+            width: 271px;
+            height: 65px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            background-image: url('../css/Frame\ 322.png');
+        }
+
+    }
+    .fhf{
+        margin: 20px;
+        width: 461px;
+        height: 341px;
+        border-radius: 10px;
+        background-color: white;
+        padding-left: 20px;
+        padding-top: 45px;
+        .gh{
+            color: black;
+            font-weight: 400;
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .jk{
+            width: 271px;
+            height: 65px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            background-image:url('../css/Frame\ 322\ \(1\).png');
+        }
+    }
+    .pag4{
+        width: 100%;
+        height: 397px;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 40px ;
+        padding-right: 40px;
+    }
+    .qw{
+        width: 275px;
+        height: 194px;
+        background-color: transparent;
+        position: relative;
+        padding-top: 5%;
+        .bon{
+            top: 0%;
+            position: absolute;
+            width: 128px;
+            height: 45px;
+            background-image: url('../css/Frame\ 2.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            
+        }
+        .cv{
+            color: white;
+            font-weight: 400;
+            font-family: sans-serif;
+            font-size: 14px;
+            line-height: 15px;
+
+        }
+        .bot{
+            width: 196px;
+            height: 40px;
+            background-image: url('../css/Frame\ 1228.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    }
+    
+    .qe{
+        width: 150px;
+        min-height: 197px;
+        background-color: transparent;
+        h4{
+            color: white;
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26.04px;
+
+        }
+        a{ 
+            margin: 5px;
+            color: white;
+            font-weight: 400;
+            font-family: sans-serif;
+            line-height: 15px;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+    }
+    .qr{
+        width: 150px;
+        min-height: 197px;
+        background-color:transparent;
+        h4{
+            color: white;
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26.04px;
+
+        }
+        a{ 
+            margin: 5px;
+            color: white;
+            font-weight: 400;
+            font-family: sans-serif;
+            line-height: 15px;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+    }
+    .qt{
+        min-width: 275px;
+        min-height: 194px;
+        background-color:transparent;
+        h4{
+            color: white;
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26.04px;
+
+        }
+        .ui{
+            color: white;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight:400;
+            line-height: 15px;
+        }
+    }
+    .vb{
+        width: 200px;
+        height: 54px;
+        border-radius: 5px; 
+        
+    }
+  
